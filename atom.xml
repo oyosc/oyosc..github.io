@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>blog of oyosc</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://oyosc.github.io/"/>
+  <updated>2017-05-21T03:41:15.000Z</updated>
+  <id>http://oyosc.github.io/</id>
+  
+  <author>
+    <name>oyosc</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>centos7搭建mastodon遇到的问题及解决办法</title>
+    <link href="http://oyosc.github.io/2017/05/21/centos7%E6%90%AD%E5%BB%BAmastodon%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://oyosc.github.io/2017/05/21/centos7搭建mastodon遇到的问题及解决办法/</id>
+    <published>2017-05-21T01:41:03.000Z</published>
+    <updated>2017-05-21T03:41:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题1-centos7上分别有ruby2-0跟ruby2-4-怎么去选择版本！"><a href="#问题1-centos7上分别有ruby2-0跟ruby2-4-怎么去选择版本！" class="headerlink" title="问题1:centos7上分别有ruby2.0跟ruby2.4,怎么去选择版本！"></a>问题1:centos7上分别有ruby2.0跟ruby2.4,怎么去选择版本！</h3><p>–解决方案：ruby global version,如果还不行输入命令<br>    <pre><br>    <code>rbenv rehash</code><br>    <code>source ~/.bash_profile ／重新加载profile</code><br>    </pre></p>
+<h3 id="问题2-非root用户下sudo-bundle显示command-not-found"><a href="#问题2-非root用户下sudo-bundle显示command-not-found" class="headerlink" title="问题2: 非root用户下sudo bundle显示command not found"></a>问题2: 非root用户下sudo bundle显示command not found</h3><p>–解决方案：修改/etc/sudoers 文件，找到 Defaults secure_path = /sbin:/bin:/usr/sbin:/usr/bin 这一行将其注释掉 删掉也行 这样在dsudo 的时候就不会reset path了</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;问题1-centos7上分别有ruby2-0跟ruby2-4-怎么去选择版本！&quot;&gt;&lt;a href=&quot;#问题1-centos7上分别有ruby2-0跟ruby2-4-怎么去选择版本！&quot; class=&quot;headerlink&quot; title=&quot;问题1:centos7上分别
+    
+    </summary>
+    
+      <category term="linux" scheme="http://oyosc.github.io/categories/linux/"/>
+    
+      <category term="centos" scheme="http://oyosc.github.io/categories/linux/centos/"/>
+    
+    
+      <category term="centos7" scheme="http://oyosc.github.io/tags/centos7/"/>
+    
+      <category term="mastodon" scheme="http://oyosc.github.io/tags/mastodon/"/>
+    
+  </entry>
+  
+</feed>
